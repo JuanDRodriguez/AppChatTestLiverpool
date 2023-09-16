@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  AppChatTestLiverpool
+
+  Created by JuanD Rodriguez on 13/09/23.
+  
+*/
+"required" = "required";
+"chat" = "chat";
+"cancel" = "cancel";
+"email" = "email";
+"search" = "search";
+"profile" = "profile";
+"password" = "password";
+"signUp" = "sign up";
+"logIn" = "log in";
+"conversations" = "conversations";
+"fillFieldsRequired" = "please fill out all required fields";
+"failedExistingItem" = "Looks like a user account for that email  already exists.";
+"failedCreateUser" = "error creating user";
+"emailFormatIncorrect" = "email format incorrect";
+"FailedLogin" = "incorrect username or password";
+"searchUsers" = "search for users";
