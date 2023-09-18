@@ -14,7 +14,7 @@ class AppCoordinatoor: Coordinator{
     let coordinatorFactory: CoordinatorFactory
     let modulesFactory: ModulesFactory
     var navigationController: UINavigationController
-    let appContainer: AppContainer
+    var appContainer: AppContainer
     var window: UIWindow?
     init(navigationController: UINavigationController, window: UIWindow?) {
         self.navigationController = navigationController
@@ -35,6 +35,7 @@ class AppCoordinatoor: Coordinator{
 }
 extension AppCoordinatoor: DelegateAppCoordinator{
     func root() {
+        appContainer.id = ""
         self.start()
     }
     

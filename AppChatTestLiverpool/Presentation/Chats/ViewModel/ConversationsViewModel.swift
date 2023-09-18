@@ -31,13 +31,14 @@ class ConversationViewModel: ConversationsViewModelProtocols{
     var users: Observable<[User]?> = Observable([])
     var conversations: Observable<[Conversation]?> = Observable([])
     var id: String?
-    var sender: Observable<User?> = Observable(nil)
+    var sender: Observable<User?> = Observable(User(senderId: "", displayName: "", urlImage: ""))
     let usecase: ConversationUseCaseProtocol
     
     init(usecase: ConversationUseCaseProtocol) {
         self.usecase = usecase
     }
-    func getUser() {        self.usecase.execute(idUser: id ?? ""){result in
+    func getUser() {
+        self.usecase.execute(idUser: id ?? ""){result in
             switch result{
                 
             case .success(let user):

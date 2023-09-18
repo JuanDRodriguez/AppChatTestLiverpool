@@ -22,6 +22,10 @@ class ConversationsViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         self.setListeningConversations()
         self.viewModel?.getUser()
         self.viewModel?.getConversations()
