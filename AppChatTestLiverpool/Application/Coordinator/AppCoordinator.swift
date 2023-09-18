@@ -26,7 +26,7 @@ class AppCoordinatoor: Coordinator{
     
     func start() {
         
-        let coordinator = coordinatorFactory.makeInitialCoordinator(parent: self, appContainer: self.appContainer)
+        let coordinator = coordinatorFactory.makeInitialCoordinator(parent: self, appContainer: self.appContainer, delegate: self)
         window?.rootViewController = coordinator.navigationController
         window?.makeKeyAndVisible()
         coordinator.start()

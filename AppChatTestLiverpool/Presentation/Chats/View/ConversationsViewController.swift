@@ -37,7 +37,7 @@ class ConversationsViewController: UIViewController, Storyboarded {
             self.users.value = items ?? []
         }
         self.viewModel?.sender.observe(on: self){ item in
-            guard let user = items else{
+            guard let user = item else{
                 self.coordinator?.logoutUser()
                 return
             }

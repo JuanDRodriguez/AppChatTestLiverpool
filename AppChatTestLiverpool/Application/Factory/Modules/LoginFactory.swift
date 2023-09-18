@@ -8,8 +8,8 @@
 import UIKit
 protocol LoginFactoryProtocol {
     func makeModule(coordinator: LoginCoordinatorInput) -> UIViewController
-    func makeCoordinator(navigationController: UINavigationController, appContainer: AppContainer) -> Coordinator
-    func makeCoordinatorRegister(navigationController: UINavigationController, appContainer: AppContainer) -> Coordinator
+    func makeCoordinator(navigationController: UINavigationController, appContainer: AppContainer, delegate: DelegateAppCoordinator) -> Coordinator
+    func makeCoordinatorRegister(navigationController: UINavigationController, appContainer: AppContainer, delegate: DelegateAppCoordinator) -> Coordinator
 }
 class LoginFactory: LoginFactoryProtocol{
     
@@ -27,12 +27,12 @@ class LoginFactory: LoginFactoryProtocol{
         viewController.viewModel = viewModel
         return viewController
     }
-    func makeCoordinator(navigationController: UINavigationController, appContainer: AppContainer) -> Coordinator {
+    func makeCoordinator(navigationController: UINavigationController, appContainer: AppContainer, delegate: DelegateAppCoordinator) -> Coordinator {
         let factory = ConversationFactory(appContainer: appContainer)
-        return ConversationCoordinator(navigationController: navigationController, conversationFactory: factory)
+        return ConversationCoordinator(navigationController: navigationController, conversationFactory: factory, delegate: delegate)
     }
-    func makeCoordinatorRegister(navigationController: UINavigationController, appContainer: AppContainer) -> Coordinator{
-        let factory = RegisterFactory(appContainer: appContainer)
+    func makeCoordinatorRegister(navigationController: UINavigationController, appContainer: AppContainer, delegate: DelegateAppCoordinator) -> Coordinator{
+        let factory = RegisterFactory(appContainer: appContainer, delegate: delegate)
         return RegisterCoordinator(navigationController: navigationController, factory: factory, appContainer: appContainer)
     }
     

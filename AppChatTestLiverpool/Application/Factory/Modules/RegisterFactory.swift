@@ -13,9 +13,11 @@ protocol RegisterFactoryProtocol {
 class RegisterFactory: RegisterFactoryProtocol{
     
     let appContainer: AppContainer
+    let delegate: DelegateAppCoordinator
     
-    init(appContainer: AppContainer) {
+    init(appContainer: AppContainer, delegate: DelegateAppCoordinator) {
         self.appContainer = appContainer
+        self.delegate = delegate
     }
     
     func makeModule(coordinator: RegisterCoordinatorInput) -> UIViewController {
@@ -30,7 +32,7 @@ class RegisterFactory: RegisterFactoryProtocol{
     
     func makeCoordinator(navigationController: UINavigationController, appContainer: AppContainer) -> Coordinator {
         let factory = LoginFactory(appContainer: appContainer)
-        return LoginCoordinator(navigationController: navigationController, factory: factory, appContainer: appContainer)
+        return LoginCoordinator(navigationController: navigationController, factory: factory, appContainer: appContainer, delegate: delegate)
     }
     
 }
