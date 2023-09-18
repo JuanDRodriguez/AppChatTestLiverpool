@@ -6,13 +6,18 @@
 //
 
 import UIKit
+protocol MainCoordinator{
+    func goToRoot()
+}
 class ConversationCoordinator: Coordinator{
     var navigationController: UINavigationController
     private var conversationFactory: ConversationFactoryProtocol
+    let delegate: DelegateAppCoordinator
     
-    init(navigationController: UINavigationController, conversationFactory: ConversationFactoryProtocol) {
+    init(navigationController: UINavigationController, conversationFactory: ConversationFactoryProtocol, delegate: DelegateAppCoordinator) {
         self.navigationController = navigationController
         self.conversationFactory = conversationFactory
+        self.delegate = delegate
     }
     
     func start() {
@@ -27,6 +32,10 @@ class ConversationCoordinator: Coordinator{
     
 }
 extension ConversationCoordinator: ConversationViewControllerCoordinator{
+    func logoutUser() {
+        delegate.root()
+    }
+    
     func didSelectCell(idConversation: String?, recipient: User, sender: User?) {
         let coordinator = conversationFactory.makeChatCoordinator(navigationController: navigationController, id: idConversation, recipient: recipient, sender: sender ?? User(senderId: "", displayName: "", urlImage: ""))
         coordinator.start()

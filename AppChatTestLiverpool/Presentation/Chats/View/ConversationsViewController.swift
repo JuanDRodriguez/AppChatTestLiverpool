@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 protocol ConversationViewControllerCoordinator {
     func didSelectCell(idConversation: String?, recipient: User, sender: User?)
+    func logoutUser()
 }
 class ConversationsViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tableView: UITableView!
@@ -36,7 +37,11 @@ class ConversationsViewController: UIViewController, Storyboarded {
             self.users.value = items ?? []
         }
         self.viewModel?.sender.observe(on: self){ item in
-            self.sender = item
+            guard let user = items else{
+                self.coordinator?.logoutUser()
+                return
+            }
+            self.sender = user
         }
                                     
     }

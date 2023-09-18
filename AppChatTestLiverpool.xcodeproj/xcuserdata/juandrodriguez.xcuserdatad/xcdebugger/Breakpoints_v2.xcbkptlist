@@ -338,99 +338,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "61F89AF9-3FE7-495A-9BE7-0565A092D83B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppChatTestLiverpool/Presentation/Chats/ViewModel/ConversationsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "getUsers()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "61F89AF9-3FE7-495A-9BE7-0565A092D83B - 6894a10b30403a32"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.User&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ConversationViewModel.getUsers() -&gt; ()"
-                  moduleName = "AppChatTestLiverpool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/ViewModel/ConversationsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "61F89AF9-3FE7-495A-9BE7-0565A092D83B - da1e6ae36cb3843d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (AppChatTestLiverpool.User) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.User&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ConversationViewModel.getUsers() -&gt; ()"
-                  moduleName = "AppChatTestLiverpool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/ViewModel/ConversationsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "61F89AF9-3FE7-495A-9BE7-0565A092D83B - db3d8d5faa8496cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;AppChatTestLiverpool.UsersRegistered&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ConversationViewModel.getUsers() -&gt; ()"
-                  moduleName = "AppChatTestLiverpool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/ViewModel/ConversationsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "61F89AF9-3FE7-495A-9BE7-0565A092D83B - cd8a03177042d076"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (AppChatTestLiverpool.User) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;Swift.Optional&lt;AppChatTestLiverpool.UsersRegistered&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ConversationViewModel.getUsers() -&gt; ()"
-                  moduleName = "AppChatTestLiverpool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/ViewModel/ConversationsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "61F89AF9-3FE7-495A-9BE7-0565A092D83B - 6894a10b30403a32"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.User&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ConversationViewModel.getUsers() -&gt; ()"
-                  moduleName = "AppChatTestLiverpool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/ViewModel/ConversationsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "172">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E19AE27F-FD80-42CE-99B5-E2C02FDA0DCC"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -509,79 +416,92 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "92D740DD-832E-434E-9BE5-C128DCCDE371"
+            uuid = "C5CF5593-B660-43E9-AC00-537F30ED6BF7"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppChatTestLiverpool/Presentation/Chats/View/ConversationsViewController.swift"
+            filePath = "AppChatTestLiverpool/Networking/Database/DatabaService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "setListeningConversations()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7E8F648D-98D6-481C-BD1D-358EEDEF06ED"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppChatTestLiverpool/Presentation/Chats/View/ConversationsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "setListeningConversations()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A00998BA-446A-4371-A7A7-C8184C167337"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppChatTestLiverpool/Data/Repositories/SessionRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "createProfile(image:user:completion:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "request(path:parameters:decodable:method:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A00998BA-446A-4371-A7A7-C8184C167337 - 610445810ee81920"
+                  uuid = "C5CF5593-B660-43E9-AC00-537F30ED6BF7 - c8754abcb8d54427"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Bool&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.SessionRepository.createProfile(image: Swift.Optional&lt;Foundation.Data&gt;, user: AppChatTestLiverpool.RequestUser, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "AppChatTestLiverpool"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/SessionRepository.swift"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "78"
                   endingLineNumber = "78"
-                  offsetFromSymbolStart = "112">
+                  offsetFromSymbolStart = "2664">
                </Location>
                <Location
-                  uuid = "A00998BA-446A-4371-A7A7-C8184C167337 - 610445810ee81920"
+                  uuid = "C5CF5593-B660-43E9-AC00-537F30ED6BF7 - c8754abcb8d54440"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Bool&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.SessionRepository.createProfile(image: Swift.Optional&lt;Foundation.Data&gt;, user: AppChatTestLiverpool.RequestUser, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "AppChatTestLiverpool"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/SessionRepository.swift"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "144">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2428">
+               </Location>
+               <Location
+                  uuid = "C5CF5593-B660-43E9-AC00-537F30ED6BF7 - 4441025304cdc510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "C5CF5593-B660-43E9-AC00-537F30ED6BF7 - a863471dc605603b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot, Swift.Optional&lt;Swift.String&gt;) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "C5CF5593-B660-43E9-AC00-537F30ED6BF7 - 4441025304cdc5f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "492">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -589,32 +509,563 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1FD1165B-4215-48AF-803F-3857A553E1D8"
-            shouldBeEnabled = "Yes"
+            uuid = "2C307C59-653C-4115-AA59-11A9965AFF72"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppChatTestLiverpool/Presentation/Session/ViewModel/PopPup/SearchUsersViewController.swift"
+            filePath = "AppChatTestLiverpool/Networking/Database/DatabaService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "request(path:parameters:decodable:method:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2C307C59-653C-4115-AA59-11A9965AFF72 - c8754abcb8d54461"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2684">
+               </Location>
+               <Location
+                  uuid = "2C307C59-653C-4115-AA59-11A9965AFF72 - 4441025304cdc5f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "2C307C59-653C-4115-AA59-11A9965AFF72 - c8754abcb8d54440"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2428">
+               </Location>
+               <Location
+                  uuid = "2C307C59-653C-4115-AA59-11A9965AFF72 - 4441025304cdc510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "2C307C59-653C-4115-AA59-11A9965AFF72 - a863471dc605603b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot, Swift.Optional&lt;Swift.String&gt;) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "2C307C59-653C-4115-AA59-11A9965AFF72 - 4441025304cdc5f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (__C.FIRDataSnapshot) -&gt; () in AppChatTestLiverpool.DatabaseService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, decodable: &#x3c4;_0_0, method: AppChatTestLiverpool.DatabaseMethods, completion: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BE49A2D-8C3F-446A-B26B-2A19E3DE793F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Networking/Database/DatabaService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "request(path:parameters:decodable:method:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A6B7538B-3FFA-4A63-93F5-E6EDC08D1395"
+            uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppChatTestLiverpool/Presentation/Session/ViewModel/PopPup/SearchUsersViewController.swift"
+            filePath = "AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "createConversation(sender:conversation:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555 - 2823c71246724e02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatRepository.createConversation(idConversation: Swift.String, conversation: AppChatTestLiverpool.Conversation, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555 - e69d12b6594f016d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.Conversation&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.createConversation(idConversation: Swift.String, conversation: AppChatTestLiverpool.Conversation, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555 - e69d12b6594f016d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.Conversation&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.createConversation(idConversation: Swift.String, conversation: AppChatTestLiverpool.Conversation, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555 - ace73a3eaf16e254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatRepository.createConversation(sender: AppChatTestLiverpool.User, conversation: AppChatTestLiverpool.Conversation, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555 - e2a3118dd82f8adc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.Conversation&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.createConversation(sender: AppChatTestLiverpool.User, conversation: AppChatTestLiverpool.Conversation, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "7BC3E595-1C04-473B-A9A8-2D46A7883555 - e2a3118dd82f8adc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.Conversation&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.createConversation(sender: AppChatTestLiverpool.User, conversation: AppChatTestLiverpool.Conversation, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "388">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67C982F5-BEFB-4AD6-AF05-D921B2E9EF8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "sendMessage(idConversation:message:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "67C982F5-BEFB-4AD6-AF05-D921B2E9EF8B - 4467ec46a50b5b0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "67C982F5-BEFB-4AD6-AF05-D921B2E9EF8B - 4467ec46a50b5cef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "67C982F5-BEFB-4AD6-AF05-D921B2E9EF8B - 4467ec46a50b5ca1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5848C2FD-245D-4738-8D60-E25FD2A68545"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "sendMessage(idConversation:message:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5848C2FD-245D-4738-8D60-E25FD2A68545 - 4467ec46a50b5cef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "5848C2FD-245D-4738-8D60-E25FD2A68545 - 4467ec46a50b5cef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "5848C2FD-245D-4738-8D60-E25FD2A68545 - 4467ec46a50b5cef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "5848C2FD-245D-4738-8D60-E25FD2A68545 - 4467ec46a50b5ca1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;AppChatTestLiverpool.MessageDTO&gt;&gt;, Swift.Error&gt;) -&gt; () in AppChatTestLiverpool.ChatRepository.sendMessage(idConversation: Swift.String, message: AppChatTestLiverpool.MessageDTO, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Bool&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Data/Repositories/ChatRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4405D396-1C3E-4993-930B-9161AADD37AF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Data/Repositories/ConversationRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchUsers(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22226D1C-1ABF-4DCE-9D2E-D478DAE09321"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Data/Repositories/ConversationRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchUsers(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "621F203E-DA81-4B93-8F36-32191D51AEED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Presentation/Chats/ViewModel/ChatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "sendMessage(idConversation:message:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "319F72E0-7FC6-4066-BE6E-EC5588DA7FF1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "setupListening()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "319F72E0-7FC6-4066-BE6E-EC5588DA7FF1 - e83960d061b94888"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatViewController.configMessageCollection() -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "319F72E0-7FC6-4066-BE6E-EC5588DA7FF1 - e83960d061b94888"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatViewController.configMessageCollection() -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  uuid = "319F72E0-7FC6-4066-BE6E-EC5588DA7FF1 - 1b874b8441a52d9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatViewController.setupListening() -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "956">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C419242-9278-489F-A8CD-5EB9D2915FDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "setupListening()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C419242-9278-489F-A8CD-5EB9D2915FDC - e83960d061b948ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatViewController.configMessageCollection() -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "8C419242-9278-489F-A8CD-5EB9D2915FDC - e83960d061b948ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatViewController.configMessageCollection() -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "8C419242-9278-489F-A8CD-5EB9D2915FDC - 1b874b8441a52d9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppChatTestLiverpool.ChatViewController.setupListening() -&gt; ()"
+                  moduleName = "AppChatTestLiverpool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandrodriguez/Documents/Developing/iOS/AppChatTestLiverpool/AppChatTestLiverpool/Presentation/Chats/View/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "956">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4C2E7E4-12E2-4655-A9ED-C1815A02C0C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppChatTestLiverpool/Presentation/Chats/ViewModel/ChatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "sendMessage(idConversation:message:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
