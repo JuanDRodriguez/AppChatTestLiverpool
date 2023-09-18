@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 protocol ConversationViewControllerCoordinator {
-    func didSelectCell(otherEmail: String, idConversation: String?, name: String, url: String)
+    func didSelectCell(idConversation: String?, recipient: User, sender: User?)
 }
 class ConversationsViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tableView: UITableView!
@@ -17,10 +17,13 @@ class ConversationsViewController: UIViewController, Storyboarded {
     var users: Observable<[User]?> = Observable([])
     var coordinator: ConversationViewControllerCoordinator?
     var id: String?
+    var sender: User?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
         self.setListeningConversations()
+        self.viewModel?.getUser()
+        self.viewModel?.getConversations()
     }
     private func setListeningConversations(){
         self.viewModel?.conversations.observe(on: self){ items in
@@ -32,9 +35,13 @@ class ConversationsViewController: UIViewController, Storyboarded {
         self.viewModel?.users.observe(on: self){ items in
             self.users.value = items ?? []
         }
+        self.viewModel?.sender.observe(on: self){ item in
+            self.sender = item
+        }
+                                    
     }
     private func setupTableView() {
-        tableView.register(ConversationTableViewCell.self,
+        tableView.register(UINib(nibName: "ConversationTableViewCell", bundle: nil),
                            forCellReuseIdentifier: ConversationTableViewCell.reuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
@@ -50,7 +57,7 @@ extension ConversationsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let conversation = conversations[indexPath.row]
-        self.coordinator?.didSelectCell(otherEmail: conversation.otherUserEmail, idConversation: conversation.id, name: conversation.name, url: conversation.urlImage)
+        self.coordinator?.didSelectCell(idConversation: conversation.id, recipient: conversation.recipient, sender: self.sender)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -77,11 +84,11 @@ extension ConversationsViewController: SearchUserProtocol{
     
     
     func finishSearch(user: User) {
-        guard let conversation = self.conversations.first(where: { $0.otherUserEmail == user.senderId}) else {
-            self.coordinator?.didSelectCell(otherEmail: user.senderId, idConversation: nil, name: user.displayName, url: user.urlImage)
+        guard let conversation = self.conversations.first(where: { $0.recipient.senderId == user.senderId}) else {
+            self.coordinator?.didSelectCell(idConversation: nil, recipient: user, sender: self.sender)
             return
         }
-        self.coordinator?.didSelectCell(otherEmail: user.senderId, idConversation: conversation.id, name: user.displayName, url: user.urlImage)
+        self.coordinator?.didSelectCell(idConversation: conversation.id, recipient: conversation.recipient, sender: self.sender)
     }
     
     

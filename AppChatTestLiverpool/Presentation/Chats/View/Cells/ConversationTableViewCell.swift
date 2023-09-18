@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class ConversationTableViewCell: UITableViewCell {
     static var reuseIdentifier: String = "\(String(describing: ConversationTableViewCell.self))"
     @IBOutlet weak var userImageView: UIImageView!
@@ -23,7 +23,10 @@ class ConversationTableViewCell: UITableViewCell {
     }
     func setData(item: Conversation){
         self.messageLabel.text = item.latestMessage.text
-        self.nameLabel.text = item.name
+        self.nameLabel.text = item.recipient.displayName
         self.dateLabel.text = item.latestMessage.date
+        DispatchQueue.main.async {
+            self.userImageView.sd_setImage(with: URL(string: item.recipient.urlImage), completed: nil)
+        }
     }
 }

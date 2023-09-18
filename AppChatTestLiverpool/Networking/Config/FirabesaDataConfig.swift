@@ -54,12 +54,16 @@ public enum StoragePath: String{
     case users = "users/%@"
     case messages = "conversations/%@/messages"
     case conversations = "users/%@/conversations"
+    
 }
 public enum DatabasePath: String{
     case user = ""
 }
 public enum DatabaseMethods{
     case set
+    case setAutoID
     case get
     case getArray
+    case getAutoID
+    case observing
 }

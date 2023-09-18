@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 protocol ChatFactoryProtocol{
-    func makeModule(otherEmail: String, idConversation: String?, name: String, url: String) -> UIViewController
+    func makeModule( idConversation: String?, recipient: User, sender: User) -> UIViewController
 }
 class ChatFactory: ChatFactoryProtocol {
     
@@ -19,15 +19,14 @@ class ChatFactory: ChatFactoryProtocol {
         self.appContainer = appContainer
     }
     
-    func makeModule(otherEmail: String, idConversation: String?, name: String, url: String) -> UIViewController {
+    func makeModule( idConversation: String?, recipient: User, sender: User) -> UIViewController {
         let repository = ChatRepository(databaseService: appContainer.dataService)
         let useCase = ChatUseCase(repository: repository)
-        //let viewModel = ChatViewModel(useCase: useCase)
+        let viewModel = ChatViewModel(useCase: useCase, recipient: recipient)
         let viewController = ChatViewController.instantiate(storyboardName: "Main")
-        viewController.otherUserEmail = otherEmail
         viewController.conversationId = idConversation
-        viewController.name = name
-        viewController.imageOtherEmmail = url
+        viewController.viewModel = viewModel
+        viewController.sender = sender
         return viewController
     }
 }

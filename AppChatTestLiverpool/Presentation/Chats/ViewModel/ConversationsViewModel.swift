@@ -11,14 +11,19 @@ protocol ConversationViewModelOutput{
     var users:  Observable<[User]?> { get set }
     func getUsers()
     func getConvertationValidExisting()
+    func getUser()
+    var sender: Observable<User?> { get set }
+    func getConversations()
 }
 protocol ConversationViewModelInput{
-    func getConversations()
+    
 }
 
 typealias ConversationsViewModelProtocols = ConversationViewModelOutput & ConversationViewModelInput
 
 class ConversationViewModel: ConversationsViewModelProtocols{
+    
+    
     func getConvertationValidExisting() {
         
     }
@@ -26,13 +31,24 @@ class ConversationViewModel: ConversationsViewModelProtocols{
     var users: Observable<[User]?> = Observable([])
     var conversations: Observable<[Conversation]?> = Observable([])
     var id: String?
-    
+    var sender: Observable<User?> = Observable(nil)
     let usecase: ConversationUseCaseProtocol
     
     init(usecase: ConversationUseCaseProtocol) {
         self.usecase = usecase
     }
-    
+    func getUser() {        self.usecase.execute(idUser: id ?? ""){result in
+            switch result{
+                
+            case .success(let user):
+                self.sender.value = user
+                break
+            case .failure(_):
+                print("fail fetch my user")
+                break
+            }
+        }
+    }
     func getUsers() {
         usecase.execute(){ result in
             switch result{

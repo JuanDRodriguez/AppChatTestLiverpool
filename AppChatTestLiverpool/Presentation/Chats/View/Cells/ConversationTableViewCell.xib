@@ -91,10 +91,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dateLabel" destination="oka-Ii-RGb" id="B1u-sr-2Pw"/>
-                <outlet property="messageLabel" destination="OSd-EF-tiM" id="GEn-kE-7BU"/>
-                <outlet property="nameLabel" destination="F9k-mD-qL3" id="Cwc-Wf-k0u"/>
-                <outlet property="userImageView" destination="SXZ-0g-BJ7" id="iVP-rX-2TF"/>
+                <outlet property="dateLabel" destination="oka-Ii-RGb" id="u6T-8O-bX4"/>
+                <outlet property="messageLabel" destination="OSd-EF-tiM" id="3i1-hn-RCh"/>
+                <outlet property="nameLabel" destination="F9k-mD-qL3" id="jn4-7e-P1l"/>
+                <outlet property="userImageView" destination="SXZ-0g-BJ7" id="nFQ-Kb-7Xs"/>
             </connections>
             <point key="canvasLocation" x="109.9236641221374" y="1.4084507042253522"/>
         </tableViewCell>

@@ -9,9 +9,14 @@ import Foundation
 protocol ConversationUseCaseProtocol{
     func execute(completion:@escaping CompletionHandler<[Conversation]>)
     func execute(completionHandler: @escaping CompletionHandler<[User]>)
+    func execute(idUser: String, completionHandler: @escaping CompletionHandler<User>)
 }
 
 class ConversationUseCase: ConversationUseCaseProtocol{
+    func execute(idUser: String, completionHandler: @escaping CompletionHandler<User>) {
+        self.repository.fetchUser(idUser: idUser, completion: completionHandler)
+    }
+    
     
     var repository: ConversationRepository
     init(repository: ConversationRepository) {
@@ -22,7 +27,7 @@ class ConversationUseCase: ConversationUseCaseProtocol{
     }
     
     func execute(completionHandler: @escaping CompletionHandler<[User]>) {
-        self.repository.fetchUser(completion: completionHandler)
+        self.repository.fetchUsers(completion: completionHandler)
     }
     
 }

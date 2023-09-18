@@ -26,3 +26,9 @@ extension String{
 extension StringProtocol{
     var firstUpper:String{return prefix(1).uppercased() + dropFirst().lowercased()}
 }
+
+extension Date {
+    func toMillis() -> Int64! {
+        return Int64(self.timeIntervalSince1970 * 1000)
+    }
+}

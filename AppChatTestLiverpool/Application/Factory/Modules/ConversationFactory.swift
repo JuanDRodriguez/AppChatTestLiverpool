@@ -8,12 +8,12 @@
 import UIKit
 protocol ConversationFactoryProtocol {
     func makeModule(coordinator: ConversationViewControllerCoordinator) ->  UIViewController
-    func makeChatCoordinator(navigationController: UINavigationController, email: String, id: String?, name: String, url: String ) -> Coordinator
+    func makeChatCoordinator(navigationController: UINavigationController, id:String?, recipient: User, sender:User ) -> Coordinator
 }
 struct ConversationFactory: ConversationFactoryProtocol {
-    func makeChatCoordinator(navigationController: UINavigationController, email: String, id: String?, name: String, url: String) -> Coordinator {
+    func makeChatCoordinator(navigationController: UINavigationController, id:String?, recipient: User, sender:User ) -> Coordinator {
         let factory = ChatFactory(appContainer: self.appContainer)
-        return ChatCoordinator(navigationController: navigationController, moduleFactory: factory, otherEmail: email, idConversation: id, name: name, url: url)
+        return ChatCoordinator(navigationController: navigationController, moduleFactory: factory, idConversation: id, sender:sender, recipient: recipient)
     }
     
     

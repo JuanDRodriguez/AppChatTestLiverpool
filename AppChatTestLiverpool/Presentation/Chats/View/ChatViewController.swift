@@ -12,51 +12,69 @@ import InputBarAccessoryView
 class ChatViewController: MessagesViewController, Storyboarded {
 
     lazy var messageList: [Message] = []
+    var viewModel: ChatViewModelProtocol?
     var otherUserEmail: String = ""
     var conversationId: String?
-    var imageOtherEmmail: String?
-    var name: String = ""
-    var id: String = ""
-    let dateFormatter: DateFormatter = {
-        let formattre = DateFormatter()
-        formattre.dateStyle = .medium
-        formattre.timeStyle = .long
-        formattre.locale = .current
-        return formattre
-    }()
+    var sender: User!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configMessageCollection()
-        //self.setupInputButton()
+       
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        setupListening()
+    }
+    
+    func setupListening(){
+        
+        self.viewModel?.items.observe(on: self){ item in
+            self.messageList = item
+            DispatchQueue.main.async {
+                self.messagesCollectionView.reloadDataAndKeepOffset()
+                self.messagesCollectionView.scrollToLastItem(at: .bottom)
+                self.messageInputBar.inputTextView.text = nil
+            }
+        }
+        guard let idConversation = self.conversationId else {
+            self.viewModel?.idConversationCreated.observe(on: self){ id in
+                guard let idConversation = id, !idConversation.isEmpty else{
+                    return
+                }
+                self.conversationId = idConversation
+                self.viewModel?.loadMessagesChat(idConversation: idConversation)
+            }
+            return
+            
+        }
+        self.viewModel?.loadMessagesChat(idConversation: idConversation)
+        
+        
+        
     }
     func configMessageCollection(){
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
+        messagesCollectionView.messageCellDelegate = self
+        messageInputBar.delegate = self
     }
-   /* private func setupInputButton() {
-        let button = InputBarButtonItem()
-        button.setSize(CGSize(width: 35, height: 35), animated: false)
-        button.setImage(UIImage(systemName: "paperclip"), for: .normal)
-        button.onTouchUpInside { [weak self] _ in
-            self?.presentInputActionSheet()
-        }
-        messageInputBar.setLeftStackViewWidthConstant(to: 36, animated: false)
-        messageInputBar.setStackViewItems([button], forStack: .left, animated: false)
-    }*/
+   
 
 
 }
 extension ChatViewController: InputBarAccessoryViewDelegate{
     func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
-       
+        let messageId = Date().toMillis()
+        let message = Message(text: text, user: self.sender, messageId: "\(messageId ?? 0000000)", date: Date())
+        self.viewModel?.sendMessage(idConversation: self.conversationId, message: message, sender: sender)
     }
     
 }
 // MARK: MessagesDataSource
 extension ChatViewController: MessagesDataSource{
     var currentSender: MessageKit.SenderType {
-        User(senderId: self.id, displayName: "Me", urlImage: "")
+        self.sender
     }
     
     func messageForItem(at indexPath: IndexPath, in messagesCollectionView: MessageKit.MessagesCollectionView) -> MessageKit.MessageType {
@@ -111,11 +129,12 @@ extension ChatViewController: MessagesDisplayDelegate {
     // MARK: - All Messages
     
     func backgroundColor(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> UIColor {
-        _ = message.sender
-        //if sender.senderId == selfSender?.senderId {
+        let sender = message.sender
+        if sender.senderId == self.sender.senderId {
             // our message that we've sent
-           // return .link
-        //}
+            return .link
+        }
+
         
         return .secondarySystemBackground
     }
@@ -141,5 +160,15 @@ extension ChatViewController: MessagesDisplayDelegate {
         } else {
             //imageView.kf.cancelDownloadTask()
         }
+    }
+}
+extension ChatViewController: MessageCellDelegate {
+    func didTapMessage(in cell: MessageCollectionViewCell) {
+        guard let indexPath = messagesCollectionView.indexPath(for: cell) else {
+            return
+        }
+
+        let message = self.messageList[indexPath.section]
+  
     }
 }

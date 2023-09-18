@@ -8,16 +8,12 @@
 import Foundation
 struct Conversation: Codable {
     let id: String
-    let name: String
-    let otherUserEmail: String
-    let urlImage: String
+    let recipient: User
     let latestMessage: LatestMessage
     enum CodingKeys:String,CodingKey {
         case id = "id"
-        case name = "name"
-        case otherUserEmail = "otherUser"
         case latestMessage = "latestMessage"
-        case urlImage = "photo"
+        case recipient = "recipient"
         
     }
 }

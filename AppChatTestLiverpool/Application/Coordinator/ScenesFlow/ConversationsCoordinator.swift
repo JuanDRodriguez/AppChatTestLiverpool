@@ -27,9 +27,8 @@ class ConversationCoordinator: Coordinator{
     
 }
 extension ConversationCoordinator: ConversationViewControllerCoordinator{
-    func didSelectCell(otherEmail: String, idConversation: String?, name: String, url: String) {
-        let coordinator = conversationFactory.makeChatCoordinator(navigationController: self.navigationController, email: otherEmail, id: idConversation, name: name, url: url)
+    func didSelectCell(idConversation: String?, recipient: User, sender: User?) {
+        let coordinator = conversationFactory.makeChatCoordinator(navigationController: navigationController, id: idConversation, recipient: recipient, sender: sender ?? User(senderId: "", displayName: "", urlImage: ""))
         coordinator.start()
     }
-    
 }

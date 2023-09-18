@@ -8,5 +8,6 @@
 import Foundation
 protocol ConversationRepositoryProtocol{
     func fetchConversations(completion:@escaping CompletionHandler<[Conversation]>)
-    func fetchUser(completion:@escaping CompletionHandler<[User]>)
+    func fetchUsers(completion:@escaping CompletionHandler<[User]>)
+    func fetchUser(idUser: String,completion:@escaping CompletionHandler<User>)
 }

@@ -31,7 +31,6 @@ class SearchUsersViewController: UIViewController, Storyboarded {
                 return
             }
             self.listUsers = list
-            self.hasFetched = true
             DispatchQueue.main.async {
                 self.searchUsers(user: self.searchBar.text ?? "")
                 self.tableView.reloadData()
@@ -60,7 +59,7 @@ class SearchUsersViewController: UIViewController, Storyboarded {
 
     func searchUsers(user: String) {
         let emailId = id ?? ""
-        if hasFetched {
+       
            let newListUsers = listUsers.filter({
                let email = $0.senderId
                guard email != emailId  else{
@@ -72,10 +71,8 @@ class SearchUsersViewController: UIViewController, Storyboarded {
                 return name.hasPrefix(user.lowercased())
             })
             self.listUsers = newListUsers
-        }
-        else {
-            self.delegate?.fetchUsers()
-        }
+        
+        
     }
 
     
@@ -122,8 +119,8 @@ extension SearchUsersViewController: UISearchBarDelegate {
         }
 
         searchBar.resignFirstResponder()
-
-        searchUsers(user: text)
+        self.delegate?.fetchUsers()
+        
     }
 }
 

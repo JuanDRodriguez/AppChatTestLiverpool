@@ -7,8 +7,7 @@
 
 import Foundation
 protocol ChatRepositoryProtocol{
-    func fectMessages()
-    func createConversation()
-    func sendMessage()
+    func fectMessages(idConversation: String, completion: @escaping CompletionHandler<[MessageDTO]> )
+    func createConversation(sender: User,conversation: Conversation,completion: @escaping CompletionHandler<Bool>)
+    func sendMessage(idConversation:String, message: MessageDTO, completion: @escaping CompletionHandler<Bool>)
 }
-
